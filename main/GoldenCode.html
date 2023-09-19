@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <title>WEDDING BOOKING WEBSITE
+    </title>
+    <link rel="stylesheet" href="sanya.css">
+</head>
+
+<body>
+    <div class="booking-form">
+        <form method="get" enctype="application/x-www-form-urlencoded" action="bookings.php">
+            <div class="form-group">
+                <label for="customer_name">Name</label>
+                <input type="text" id="customer_name" name="customer_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone_number">Phone</label>
+                <input type="tel" id="phone_number" name="phone_number">
+            </div>
+
+            <div class="form-group">
+                <label for="email_address">Email</label>
+                <input type="email" id="email_address" name="email_address">
+            </div>
+
+            <fieldset>
+                <legend>Which type of wedding you require?</legend>
+                <div class="form-group">
+                    <label class="radio-label">
+                        <input type="radio" name="wedding_type" value="beach" required>
+                        <span class="txt">
+                            Beach Weddings
+                        </span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="radio-label">
+                        <input type="radio" name="wedding_type" value="garden" required>
+                        <span class="txt">
+                            Garden &amp; Outdoor Weddings
+                        </span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="radio-label">
+                        <input type="radio" name="wedding_type" value="indoor" required>
+                        <span class="txt">
+                            Indoor Weddings
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras</legend>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="extras" value="guest_book">
+                        <span class="txt">
+                            Guest Book
+                        </span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="extras" value="signage">
+                        <span class="txt">
+                            Signage
+                        </span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="extras" value="religious_necessities">
+                        <span class="txt">
+                            Any Religious Necessities
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="pickup_time">Booking Date/Time</label>
+                <input type="datetime-local" id="pickup_time" name="pickup_time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pickup_place">Wedding Place</label>
+                <select id="pickup_place" name="pickup_place">
+                    <option value="" selected="selected">Select One</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="indoor">Indoor</option>
+                    <option value="beach">Beach</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dropoff_place">Guest Pickup Place</label>
+                <input type="text" id="dropoff_place" name="dropoff_place" required list="destinations">
+                <datalist id="destinations">
+                    <option value="Airport">
+                    <option value="Bus Stand">
+                    <option value="Railway Station">
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Special Instructions</label>
+                <textarea id="comments" name="comments" maxlength="500"></textarea>
+            </div>
+
+            <div class="button">
+                <button>Submit Booking</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

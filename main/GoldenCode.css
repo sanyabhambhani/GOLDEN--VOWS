@@ -1,0 +1,229 @@
+/* CSS for the whole form */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #f8f7f2;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fade-in 1s ease;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4c4c4c;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4c4c4c;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #4c4c4c;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: inline;
+    margin-right: 5px;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4c4c4c;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0e677f;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0a4b5a;
+  }
+  
+  input:required:invalid,
+  textarea:required:invalid,
+  select:required:invalid {
+    border: 2px solid #ff6565;
+  }
+  
+  input:required:valid,
+  textarea:required:valid,
+  select:required:valid {
+    border: 2px solid #64c463;
+  }
+  
+  input[type="datetime-local"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+  }
+  
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    position: relative;
+    top: 1px;
+    left: 1px;
+    padding: 0 4px;
+    background-color: #0e677f;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="datetime-local"]::-webkit-datetime-edit-day-field,
+  input[type="datetime-local"]::-webkit-datetime-edit-month-field,
+  input[type="datetime-local"]::-webkit-datetime-edit-year-field {
+    color: #4c4c4c;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 50px;
+    font-size: 16px;
+  }
+  
+  input[type="datetime-local"]::-webkit-datetime-edit-hour-field,
+  input[type="datetime-local"]::-webkit-datetime-edit-minute-field {
+    color: #4c4c4c;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    font-size: 16px;
+  }
+
+.booking-form {
+    background-color: #f9f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  /* CSS for form elements */
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f9a135;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e8962b;
+  }
+  
+  /* CSS for fieldset */
+  
+  fieldset {
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* CSS for form validation */
+  
+  input:required,
+  textarea:required {
+    border: 2px solid #f9a135;
+  }
+  
+  input:valid,
+  textarea:valid {
+    border: 2px solid #90ee90;
+  }
+  
+  input:invalid,
+  textarea:invalid {
+    border: 2px solid #ff7f7f;
+  }
+  
+  /* CSS for additional styling */
+  
+  .form-group{
+    margin-top: 0px;
+  }
+  .datalist-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .datalist-label input {
+    width: 80%;
+    margin-right: 10px;
+  }
+  
